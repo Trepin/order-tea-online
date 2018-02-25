@@ -1,0 +1,37 @@
+.SeriesItem{
+	width: 49.5%;
+	height: 60px;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	transition: transform 0.2s ease;
+}
+
+.SeriesItem:hover{
+	box-shadow: 0px 0px 3px;
+	cursor: pointer;
+}
+
+.SeriesItem:active{
+	transform: scale(0.99);
+}
+
+.priceText{
+	font-weight: 700;
+	padding-right: 10px;
+}
+
+.seriesItemFont{
+	font-weight: 700;
+	color: #2b8282;
+}
+
+@media (max-width: 500px){
+	.SeriesItem{
+		width: 100%;
+	}
+	.seriesItemFont{
+		font-size: 0.9em;
+	}
+}

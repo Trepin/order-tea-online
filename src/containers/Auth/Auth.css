@@ -1,0 +1,65 @@
+.Register{
+	padding-top: 100px;
+	width: 50%;
+}
+
+.RegisterHeader{
+	padding-left: 0;
+}
+
+.NameInput{
+	display: flex;
+}
+
+.FormInvalid{
+	border-color: #fb6100;
+}
+
+.InputError{
+	padding-top: 5px;
+	color: #fb6100;
+}
+
+.AuthSwitch{
+	padding-top: 20px;
+	text-align: center;
+}
+
+.AuthAnchor{
+	padding-left: 4px;
+	display: inline-block;
+	color: #2b8282;
+}
+
+.AuthAnchor:hover{
+	color: #1e5c5c;
+	cursor: pointer;
+}
+
+form button{
+	margin-top: 10px; 
+	width: 100%;
+	height: 2.5rem;
+	color: #fff;
+	background-color: #2b8282;
+}
+
+form button:hover,
+form button:active{
+				background-color: #1e5c5c;
+			}
+
+@media (max-width: 850px){
+	.Register{
+		width: 60%
+	}
+}
+
+@media (max-width: 700px){
+	.NameInput{
+		flex-direction: column;
+	}
+	.Register{
+		width: 80%
+	}
+}

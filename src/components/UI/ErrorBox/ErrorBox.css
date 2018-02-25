@@ -1,0 +1,11 @@
+.ErrorBox{
+	background-color: #ffc9cf;
+	color: #c90017;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.ErrorBox img{
+	height: 30px;
+	margin-right: 5px;
+}
