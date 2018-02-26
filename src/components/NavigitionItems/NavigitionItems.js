@@ -4,7 +4,7 @@ import NavigitionItem from './NavigitionItem/NavigitionItem';
 import Aux from '../../hoc/Aux/Aux';
 
 const NavigitionItems = (props) => (
-	<ul className='navbar-nav NavigitionItems'>
+	<ul className='navbar-nav navigition-items'>
 		{props.isAuthenticated 
 			? 
 				<Aux>

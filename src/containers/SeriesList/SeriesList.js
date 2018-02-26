@@ -121,7 +121,7 @@ class SeriesList extends Component{
 			));
 
 		return(
-		<div className='SeriesList'>
+		<div className='serieslist'>
 			{seriesItems}
 		</div>
 		)

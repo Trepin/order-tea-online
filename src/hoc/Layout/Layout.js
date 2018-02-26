@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import SideDrawer from '../../components/SideDrawer/SideDrawer';
-import Aux from '../Aux/Aux';
 import './Layout.css';
 import { connect } from 'react-redux';
 
@@ -20,13 +19,13 @@ class Layout extends Component {
 
 	render() {
 		return(
-			<Aux>
+			<div className='layout'>
 				<Navbar isAuthenticated={this.props.isAuthenticated} sideDrawerToggleClicked={this.sideDrawerToggleHandler} />
 				<SideDrawer sideDrawerToggleClicked={this.sideDrawerToggleHandler} isAuthenticated={this.props.isAuthenticated} open={this.state.sideDrawerOpen}/>
-				<main className='layout'>
+				<main>
 					{this.props.children}
 				</main>
-			</Aux>
+			</div>
 		)
 
 	}

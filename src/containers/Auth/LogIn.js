@@ -35,9 +35,9 @@ class LogIn extends Component{
         }
 
 		return(
-			<div className='container Register'>
+			<div className='container auth'>
 				{errorMessage}
-				<h4 className='RegisterHeader'>Sign In With Your Account</h4>
+				<h4 className='auth-header'>Sign In With Your Account</h4>
 				<form>
 					<div className='form-group'>
 					    <input 
@@ -62,9 +62,9 @@ class LogIn extends Component{
 							this.props.isAuthenticated ? 'Log In Success!' :'Sign In'}
 					</button>
 				</form>
-				<div className='AuthSwitch'>
+				<div className='auth-switch'>
 					Don't have an account? 
-					<div className='AuthAnchor' onClick={this.switchAuthClicked} >Create your account</div>
+					<div className='auth-anchor' onClick={this.switchAuthClicked} >Create your account</div>
 				</div>
 				{authRedirect}
 			</div>

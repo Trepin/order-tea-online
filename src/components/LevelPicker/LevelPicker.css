@@ -1,4 +1,4 @@
-.Choices{
+.levelpicker-choices{
 	display: flex;
 	flex-direction: row;
 	line-height: 1.5;
@@ -7,7 +7,7 @@
 	margin: 0.5rem 0rem 2rem 0rem;
 }
 
-.Choice{
+.levelpicker-choice{
 	flex-grow: 1;
 	text-align: center;
 	color: #2b8282;
@@ -20,26 +20,26 @@
 	font-weight: 300;
 }
 
-.Choice:first-child{
+.levelpicker-choice:first-child{
 	border-left: 1px solid #ccc;
 	border-top-left-radius: 0.25rem;
 	border-bottom-left-radius: 0.25rem;
 }
 
-.Choice:last-child{
+.levelpicker-choice:last-child{
 	border-right: 1px solid #ccc;
 	border-top-right-radius: 0.25rem;
 	border-bottom-right-radius: 0.25rem;
 }
 
-.Choice:hover{
+.levelpicker-choice:hover{
 /*	border-color: #1e5c5c;*/
 	color: #fff;
 	background-color: #1e5c5c;
 	cursor: pointer;
 }
 
-.Chosen{
+.levelpicker-choice-chosen{
 	color: white;
 	background-color:  #2b8282;
 }

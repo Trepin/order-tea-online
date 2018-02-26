@@ -5,12 +5,12 @@ import './Series.css';
 const Series = (props) => {
 	let classes = ['list-group-item series'];
 	if(props.active){
-		classes.push('seriesActive');
+		classes.push('series-active');
 	}
 
 	return(
 		<button type="button" onClick={() => props.clicked(props.name)} className={classes.join(' ')}>
-			<h6 className='seriesListFont'>{props.name}</h6>
+			<h6 className='series-title'>{props.name}</h6>
 		</button>
 	)
 };

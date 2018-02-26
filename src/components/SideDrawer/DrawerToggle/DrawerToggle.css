@@ -1,9 +1,9 @@
-.DrawerToggle {
+.drawer-toggle {
 	display: none;
 }
 
 @media (max-width: 499px){
-	.DrawerToggle{
+	.drawer-toggle{
 		display: block;
 	}
 }

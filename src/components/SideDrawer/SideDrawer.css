@@ -1,15 +1,14 @@
-.Mobile-Only{
+.mobile-only{
 	flex-direction: column;
-	top: 55px;
 	width: 100%;
 }
 
-.SideDrawerClose{
+.sidedrawer-close{
 	display: none;
 }
 
 @media (min-width: 500px){
-	.Mobile-Only{
+	.mobile-only{
 		display: none;
 	}
 }

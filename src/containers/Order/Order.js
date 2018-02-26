@@ -37,7 +37,7 @@ class Order extends Component{
 
 	render(){
 		return(
-			<div className='OrderTopping'>
+			<div>
 				<Modal 
 					isAuthenticated={this.props.isAuthenticated} 
 					sugarLevel={this.props.sugarLevel} 
@@ -48,11 +48,11 @@ class Order extends Component{
 					selectIceLevel={this.selectIceLevelHandler}
 				/>
 				<Container>
-					<h4>Choose Series</h4>
+					<h4 className='order-title'>Choose Series</h4>
 					<SeriesBar series={this.props.series} clicked={this.seriesClickedHandler}/>
 				</Container>
 				<Container>
-					<h4>{this.props.series}</h4>
+					<h4 className='order-title'>{this.props.series}</h4>
 					<SeriesList series={this.props.series} selectItem={this.selectItemHandler}/>
 				</Container>
 			</div>

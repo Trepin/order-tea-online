@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Container.css';
 
 const Container = (props) => (
-	<div className='container Container'>
+	<div className='container container-aux'>
 		{props.children}
 	</div>
 )

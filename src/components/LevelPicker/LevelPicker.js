@@ -5,9 +5,9 @@ import './LevelPicker.css';
 const levelPicker = (props) => {
 	let chosenLevel = props.level;
 	let choices = props.choices.map(choice => {
-		let classes = 'Choice';
+		let classes = 'levelpicker-choice';
 		if(chosenLevel === choice){
-			classes = 'Choice Chosen';
+			classes = 'levelpicker-choice levelpicker-choice-chosen';
 		}
 		return(
 			<div key={choice} className={classes} onClick={() => props.selectLevel(choice)}>
@@ -17,7 +17,7 @@ const levelPicker = (props) => {
 	})
 
 	return(
-		<div className='container Choices'>
+		<div className='container levelpicker-choices'>
 			{choices}
 		</div>
 	)

@@ -4,7 +4,7 @@ import './ErrorBox.css';
 
 const errorBox = (props) => {
 	return(
-		<div className='ErrorBox' >
+		<div className='errorbox' >
 			<img src={exclamationMark} alt='' />
 			{props.children}
 		</div>

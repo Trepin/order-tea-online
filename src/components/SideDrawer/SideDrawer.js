@@ -5,9 +5,9 @@ import './SideDrawer.css';
 import Aux from '../../hoc/Aux/Aux';
 
 const SideDrawer = (props) => {
-	let attachedClasses = ['navbar', 'navbar-light', 'bg-light', 'Mobile-Only', 'SideDrawerClose'];
+	let attachedClasses = ['navbar', 'navbar-light', 'bg-light', 'mobile-only', 'sidedrawer-close'];
 	if(props.open){
-		attachedClasses = ['navbar', 'navbar-light', 'bg-light', 'Mobile-Only'];
+		attachedClasses = ['navbar', 'navbar-light', 'bg-light', 'mobile-only'];
 	};
 	// console.log(attachedClasses.join(' '))
 

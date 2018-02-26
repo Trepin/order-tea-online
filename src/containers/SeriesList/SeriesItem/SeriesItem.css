@@ -1,4 +1,4 @@
-.SeriesItem{
+.series-item{
 	width: 49.5%;
 	height: 60px;
 	margin-bottom: 10px;
@@ -8,30 +8,30 @@
 	transition: transform 0.2s ease;
 }
 
-.SeriesItem:hover{
+.series-item:hover{
 	box-shadow: 0px 0px 3px;
 	cursor: pointer;
 }
 
-.SeriesItem:active{
+.series-item:active{
 	transform: scale(0.99);
 }
 
-.priceText{
+.price-font{
 	font-weight: 700;
 	padding-right: 10px;
 }
 
-.seriesItemFont{
+.series-item-font{
 	font-weight: 700;
 	color: #2b8282;
 }
 
 @media (max-width: 500px){
-	.SeriesItem{
+	.series-item{
 		width: 100%;
 	}
-	.seriesItemFont{
+	.sseries-item-font{
 		font-size: 0.9em;
 	}
 }

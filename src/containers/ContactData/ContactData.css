@@ -1,19 +1,11 @@
-.ContactData{
-	padding-top: 100px;
+.contactdata{
+	padding-top: 50px;
 	width: 50%;
 }
 
-.ContactDataHeader{
-	padding-left: 0;
-}
-
-.FormInvalid{
-	border-color: #fb6100;
-}
-
-.InputError{
-	padding-top: 5px;
-	color: #fb6100;
+.contactdata-header{
+	font-weight: 800;
+	margin-bottom: 20px;
 }
 
 form button{
@@ -24,19 +16,14 @@ form button{
 	background-color: #2b8282;
 }
 
-form button:hover,
-form button:active{
-				background-color: #1e5c5c;
-			}
-
 @media (max-width: 850px){
-	.ContactData{
+	.contactdata{
 		width: 60%
 	}
 }
 
 @media (max-width: 700px){
-	.ContactData{
+	.contactdata{
 		width: 80%
 	}
 }

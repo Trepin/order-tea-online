@@ -81,41 +81,41 @@ class Register extends Component{
         }
 
 		return(
-			<div className='container Register'>
+			<div className='container auth'>
 				{errorMessage}
-				<h4 className='RegisterHeader'>Create Your Account</h4>
+				<h4 className='auth-header'>Create Your Account</h4>
 				<form>
-					<div className='form-group NameInput'>
+					<div className='form-group nameinput'>
 						<input type='text' className='form-control' id='InputFirstName' placeholder='First Name' />
 						<input type='text' className='form-control' id='InputLastName' placeholder='Last Name' />
 					</div>
 					<div className='form-group'>
 					    <input 
 					    	type="email" 
-					    	className={this.state.email.valid || !this.state.email.touched ? 'form-control' : 'form-control FormInvalid'}
+					    	className={this.state.email.valid || !this.state.email.touched ? 'form-control' : 'form-control form-invalid'}
 					    	id="InputEmail" 
 					    	placeholder="Email" 
 					    	onChange={event => this.inputChangedHandler(event, 'email')} 
 					    	/>
-					    <div className='InputError'>{this.state.email.touched ? this.state.email.errMessage : null}</div>
+					    <div className='input-error'>{this.state.email.touched ? this.state.email.errMessage : null}</div>
 					</div>
 					<div className='form-group'>
 					    <input 
 					    	type="password"
-					    	className={this.state.password.valid || !this.state.password.touched ? 'form-control' : 'form-control FormInvalid'}
+					    	className={this.state.password.valid || !this.state.password.touched ? 'form-control' : 'form-control form-invalid'}
 					    	id="InputPassword" 
 					    	placeholder="Password (8 character minimum)" 
 					    	onChange={event => this.inputChangedHandler(event, 'password')} 
 					    	/>
-					    	<div className='InputError'>{this.state.password.touched ? this.state.password.errMessage : null}</div>
+					    	<div className='input-error'>{this.state.password.touched ? this.state.password.errMessage : null}</div>
 					</div>
 					<button type="submit" className="btn" onClick={this.submitHandler}>
 						{this.props.loading ? 'Creating Account...' : 'Create Your Account'}
 					</button>
 				</form>
-				<div className='AuthSwitch'>
+				<div className='auth-switch'>
 					Have an account? 
-					<div className='AuthAnchor' onClick={this.switchAuthClicked} >Sign in</div>
+					<div className='auth-anchor' onClick={this.switchAuthClicked} >Sign in</div>
 				</div>
 				{authRedirect}
 			</div>

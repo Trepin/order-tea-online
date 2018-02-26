@@ -54,14 +54,14 @@ class OrderHistory extends Component {
 		});
 
 		return(
-			<div className='container OrderHistory' >
+			<div className='container orderhistory' >
 				{errorMessage}
-				<h4>Order History</h4>
-				<ul className='OrderHeader'>
-					<li className='OrderHeaderContent'>Date</li>
-					<li className='OrderHeaderContent'>Item</li>
-					<li className='OrderHeaderContent'>Price</li>
-					<li className='OrderHeaderContent-Contact'>Contact Info</li>
+				<h4 className='order-title'>Order History</h4>
+				<ul className='orderhistory-header'>
+					<li className='orderhistory-content'>Date</li>
+					<li className='orderhistory-content'>Item</li>
+					<li className='orderhistory-content'>Price</li>
+					<li className='orderhistory-content-contact'>Contact Info</li>
 				</ul>
 				{orderList}
 			</div>

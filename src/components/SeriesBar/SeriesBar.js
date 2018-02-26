@@ -1,7 +1,6 @@
 import React from 'react';
 import Series from './Series/Series';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './SeriesBar.css';
 
 const SeriesBar = (props) => (
 	<div className='list-group'>

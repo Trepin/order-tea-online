@@ -1,10 +1,15 @@
-.OrderHistory{
-	padding-top: 100px;
+.orderhistory {
+	padding-top: 50px;
 	width: 80%;
 	font-size: 14px;
 }
 
-.OrderHeader{
+.order-title {
+	font-weight: 800;
+	margin-bottom: 20px;
+}
+
+.orderhistory-header {
 	border: 1px solid rgba(0,0,0,.5);
 	display: flex;
 	justify-content: space-between;
@@ -13,14 +18,14 @@
 	margin: 0;
 }
 
-.OrderHeaderContent{
+.orderhistory-content {
 	list-style: none;
 	color: rgba(0,0,0,.5);
 	padding: 10px 30px;
 	flex-basis: 22%;
 }
 
-.OrderHeaderContent-Contact{
+.orderhistory-content-contact {
 	list-style: none;
 	color: rgba(0,0,0,.5);
 	padding: 10px 30px;

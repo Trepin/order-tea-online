@@ -17,9 +17,9 @@ class Modal extends Component{
 	}
 
 	render(){
-	let modalClass = ['fade', 'Modal'];
+	let modalClass = ['fade', 'modal-close'];
 	if(this.props.show){
-		modalClass.push('ModalShown');
+		modalClass.push('modal-shown');
 	}
 
 	return(	
@@ -33,14 +33,14 @@ class Modal extends Component{
 							<span>&times;</span>
 						</button>
 					</div>
-					<div className="modal-body ModalBodyFont">
+					<div className="modal-body modal-font">
 						<div>Which level of sugar would you like?</div>
 						<LevelPicker level={this.props.sugarLevel} selectLevel={this.props.selectSugarLevel} choices={['full', 'less', 'half', 'little', 'none']}/>
 						<div>Which level of ice would you like?</div>
 						<LevelPicker level={this.props.iceLevel} selectLevel={this.props.selectIceLevel}  choices={['full', 'less', 'none']}/>
 		      		</div>
 				 	<div className="modal-footer">
-				        <button type="button" className="btn ModalButton" onClick={this.checkoutHandler} >Check Out</button>
+				        <button type="button" className="btn modal-btn" onClick={this.checkoutHandler} >Check Out</button>
 			      	</div>
 		      	</div>
 	      	</div>

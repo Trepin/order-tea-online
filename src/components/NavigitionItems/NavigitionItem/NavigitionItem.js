@@ -4,7 +4,7 @@ import './NavigitionItem.css';
 import { NavLink } from 'react-router-dom';
 
 const NavigitionItem = (props) => (
-	<li className='NavigitionItem'>
+	<li className='navigition-item'>
 		<NavLink 
 			to={props.link}
 			exact={props.exact}

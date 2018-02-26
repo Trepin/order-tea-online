@@ -1,37 +1,38 @@
-.Register{
-	padding-top: 100px;
+.auth{
+	padding-top: 50px;
 	width: 50%;
 }
 
-.RegisterHeader{
-	padding-left: 0;
+.auth-header{
+	font-weight: 800;
+	margin-bottom: 20px;
 }
 
-.NameInput{
+.nameinput{
 	display: flex;
 }
 
-.FormInvalid{
+.form-invalid{
 	border-color: #fb6100;
 }
 
-.InputError{
+.input-error{
 	padding-top: 5px;
 	color: #fb6100;
 }
 
-.AuthSwitch{
+.auth-switch{
 	padding-top: 20px;
 	text-align: center;
 }
 
-.AuthAnchor{
+.auth-anchor{
 	padding-left: 4px;
 	display: inline-block;
 	color: #2b8282;
 }
 
-.AuthAnchor:hover{
+.auth-anchor:hover{
 	color: #1e5c5c;
 	cursor: pointer;
 }
@@ -50,16 +51,16 @@ form button:active{
 			}
 
 @media (max-width: 850px){
-	.Register{
+	.auth{
 		width: 60%
 	}
 }
 
 @media (max-width: 700px){
-	.NameInput{
+	.name-input{
 		flex-direction: column;
 	}
-	.Register{
+	.auth{
 		width: 80%
 	}
 }

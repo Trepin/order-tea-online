@@ -144,9 +144,9 @@ class ContactData extends Component{
 		}
 
 		return(
-			<div className='container ContactData'>
+			<div className='container contactdata'>
 				{postError}
-				<h4 className='ContactDataHeader'>Enter Your Contact Data</h4>
+				<h4 className='contactdata-header'>Enter Your Contact Data</h4>
 				<form>
 					<div className='form-group'>
 					    <input 
@@ -154,29 +154,29 @@ class ContactData extends Component{
 					    	id="fullname" 
 					    	placeholder="Full Name" 
 					    	onChange={event => this.inputChangedHandler(event, 'fullname')} 
-					    	className={this.state.fullname.valid || !this.state.fullname.touched ? 'form-control' : 'form-control FormInvalid'}
+					    	className={this.state.fullname.valid || !this.state.fullname.touched ? 'form-control' : 'form-control form-invalid'}
 					    />
-					    <div className='InputError'>{this.state.fullname.touched ? this.state.fullname.errMessage : null}</div>
+					    <div className='input-error'>{this.state.fullname.touched ? this.state.fullname.errMessage : null}</div>
 					</div>
 					<div className='form-group'>
 					    <input 
 					    	type="text"					 
 					    	id="address" 
 					    	placeholder="Address" 
-					    	className={this.state.address.valid || !this.state.address.touched ? 'form-control' : 'form-control FormInvalid'}
+					    	className={this.state.address.valid || !this.state.address.touched ? 'form-control' : 'form-control form-invalid'}
 					    	onChange={event => this.inputChangedHandler(event, 'address')} 
 					    />
-					    <div className='InputError'>{this.state.address.touched ? this.state.address.errMessage : null}</div>
+					    <div className='input-error'>{this.state.address.touched ? this.state.address.errMessage : null}</div>
 					</div>
 					<div className='form-group'>
 					    <input 
 					    	type="text"					 
 					    	id="phone" 
 					    	placeholder="Phone Number" 
-					    	className={this.state.phonenumber.valid || !this.state.phonenumber.touched ? 'form-control' : 'form-control FormInvalid'}
+					    	className={this.state.phonenumber.valid || !this.state.phonenumber.touched ? 'form-control' : 'form-control form-invalid'}
 					    	onChange={event => this.inputChangedHandler(event, 'phonenumber')} 
 					    />
-					    <div className='InputError'>{this.state.phonenumber.touched ? this.state.phonenumber.errMessage : null}</div>
+					    <div className='input-error'>{this.state.phonenumber.touched ? this.state.phonenumber.errMessage : null}</div>
 					</div>
 					<div className="form-check">
 						<input type="checkbox" className="form-check-input" id="notification" onClick={this.checkboxClickedHandler} />

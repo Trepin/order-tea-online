@@ -6,8 +6,8 @@ import './Navbar.css';
 import DrawerToggle from '../SideDrawer/DrawerToggle/DrawerToggle';
 import { NavLink } from 'react-router-dom';
 
-const Navbar = (props) => (
-	<nav className='navbar navbar-dark bg-dark Navbar' >
+const navbar = (props) => (
+	<nav className='navbar navbar-dark bg-dark' >
 		<NavLink 
 			to='/'
 			className='navbar-brand text-white' >
@@ -16,11 +16,11 @@ const Navbar = (props) => (
 		</NavLink>
 		<div>
 			<DrawerToggle clicked={props.sideDrawerToggleClicked}/>
-			<div className='DeskTop-Only'>
+			<div className='desktop-only'>
 				<NavigitionItems isAuthenticated={props.isAuthenticated}/>
 			</div>
 		</div>
 	</nav>
 ) 
 
-export default Navbar;
+export default navbar;
