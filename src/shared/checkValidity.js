@@ -15,7 +15,6 @@ const checkValidity = (value, rules, inputid) => {
 		errMessage = isFulfilled ? errMessage : 'format of email is invalid'
 	}
 
-
 	if ( rules.isNumeric ) {
         const pattern = /^\d+$/;
         let isFulfilled = pattern.test( value );

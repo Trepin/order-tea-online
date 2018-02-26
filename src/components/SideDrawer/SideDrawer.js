@@ -9,7 +9,6 @@ const SideDrawer = (props) => {
 	if(props.open){
 		attachedClasses = ['navbar', 'navbar-light', 'bg-light', 'mobile-only'];
 	};
-	// console.log(attachedClasses.join(' '))
 
 	return(
 		<nav onClick={props.sideDrawerToggleClicked} className={attachedClasses.join(' ')} >
